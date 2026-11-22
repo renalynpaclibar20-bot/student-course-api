@@ -1,1 +1,31 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | Campus Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body data-page="index">
+  <div class="app">
+    <aside id="sidebar" class="sidebar"></aside>
+    <main class="main">
+      <header class="topbar">
+        <h2>Dashboard</h2>
+        <div class="user"><div class="avatar">RP</div><div>Renalyn Paclibar<br><small>Admin</small></div></div>
+      </header>
+      <div class="wrap">
+        <div class="hero">
+          <div><p>ACADEMIC YEAR 2025-2026 · SECOND SEMESTER</p><h1>Welcome back, Renalyn</h1><p class="lead">One view of student records, course offerings and enrollment activity, served by the Flask REST API.</p></div>
+          <a class="btn" href="/enrollment">+ New enrollment</a>
+        </div>
+        <section id="content"></section>
+      </div>
+    </main>
+  </div>
+  <div id="toast" role="status"></div>
+  <script src="{{ url_for('static', filename='javascript/script.js') }}"></script>
+</body>
+</html>
